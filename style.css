@@ -1,0 +1,904 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Parkinsans", serif;
+    overflow-x: hidden;
+}
+
+input, textarea{
+    outline: none;
+}
+
+
+
+body {
+    background-color: white;
+
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    padding: 20px;
+    align-items: center;
+    padding-inline: 50px;
+    ;
+}
+
+nav h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+nav h1 {
+    color: black;
+    text-transform: lowercase;
+    font-weight: 300;
+    cursor: pointer;
+    transition: .2s;
+}
+
+nav h1:hover {
+    color: cornflowerblue;
+}
+
+nav .login {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+
+}
+
+nav .login p {
+    transition: .2s;
+}
+
+nav .login p:hover {
+    color: cornflowerblue;
+}
+
+nav .login i {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    transition: .4s;
+}
+
+nav .login i:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.megoge{
+    text-decoration: none;
+    color:black;
+}
+
+.fa-bars {
+    display: none !important;
+}
+
+.yourfriend {
+    height: 830px;
+    background-image: url(./images/box-of-groceries-on-yellow-background-free-photo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.yourfriend h1 {
+    font-size: 50px;
+    color: khaki;
+    text-shadow: 0 0 20px black;
+    text-transform: uppercase;
+
+}
+
+.yourfriend p {
+    font-size: 50px;
+    color: black;
+
+
+}
+
+.btn {
+    background-color: beige;
+    width: 150px;
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    font-size: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover {
+    background-color: yellow;
+    color: black;
+    box-shadow: 0 0 40px white;
+}
+
+.new {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-weight: 300;
+
+}
+
+.products {
+
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.products div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+
+.products img {
+
+    height: 350px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform .3s;
+    border: 2px solid yellow;
+}
+
+.products img:hover {
+    transform: scale(1.05);
+}
+
+.delivery {
+    display: flex;
+    height: 600px;
+    margin-top: 130px;
+    background-color: rgb(251, 168, 44);
+    justify-content: space-between;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.left h1 {
+    font-size: 50px;
+    color: yellow;
+
+
+}
+
+.left p {
+    font-size: 25px;
+    color: white;
+
+}
+
+
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    height: 400px;
+    border-radius: 25px;
+    transition: transform 0.3s;
+}
+
+.right img:hover {
+    transform: scale(1.1);
+}
+
+.love {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: khaki;
+    gap: 50px;
+}
+
+.love h1 {
+    font-size: 50px;
+    color: yellow;
+    text-decoration: underline;
+    text-shadow: 0 0 3px white;
+}
+
+.love p {
+    font-size: 20px;
+}
+
+.love span {
+    color: red;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.hi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    margin-top: 150px;
+}
+
+.left1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.left1 h1 {
+    font-size: 40px;
+    color: darkgoldenrod;
+    text-shadow: 0 0 2px yellow;
+}
+
+.left1 h3 {
+    font-size: 20px;
+    color: yellow;
+    text-shadow: 0 0 5px grey;
+}
+
+.left1 h4 {
+    font-size: 20px;
+    text-shadow: 0 0 5px grey;
+}
+
+
+
+.right1 img {
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.contactPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 350px;
+    margin-top: 100px;
+}
+
+.left2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.right2 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+
+}
+
+.right2 input {
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+
+
+textarea {
+    resize: none;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+.submit {
+
+    background-color: transparent;
+
+    border-radius: 15px;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+.submit:hover {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    display: flex;
+    background-color: khaki;
+    height: 500px;
+    margin-top: 100px;
+    border: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.foottexts {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    margin: auto;
+    gap: 30px;
+
+}
+
+.foottexts h1 {
+    color: green;
+}
+
+.foottexts p {
+    text-decoration: underline;
+}
+
+.foottexts p~label {
+    text-decoration: underline;
+}
+
+.email {
+    height: 30px;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+}
+
+.footsub {
+    width: 150px;
+    align-self: center;
+    height: 50px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid black;
+    text-transform: uppercase;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footsub:hover {
+    background-color: black;
+    color: white;
+
+}
+
+.weare {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    background-color: khaki;
+    gap: 50px;
+    border-bottom: 2px solid black;
+
+}
+
+.weare h1 {
+    font-size: 100px;
+    color: black;
+    text-shadow: 0 0 10px white;
+    margin-top: 100px;
+}
+
+.weare h2 {
+    color: white;
+    text-decoration: underline;
+}
+
+.weare img {
+    width: 500px;
+}
+
+.weare h3 {
+    text-decoration: overline;
+    color: white;
+    width:60%;
+}
+
+.weare p {
+    font-size: 15px;
+    width: 60%;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+
+}
+
+.photos img {
+    width: 25%;
+    border-radius: 25px;
+    border: 5px solid black;
+    position: relative;
+
+}
+
+.way {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 60px;
+    font-weight: 100;
+    text-decoration: overline;
+}
+
+.zerowaste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.zerowaste div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+
+    gap: 30px;
+    border: 2px solid brown;
+    border-radius: 15px;
+    padding: 30px;
+
+    
+
+}
+
+
+
+.zerowaste div h1 {
+    font-weight: 200;
+}
+
+.zerowaste div p {
+    font-weight: 400;
+}
+
+.pagesBody {
+    background-color: blanchedalmond;
+
+}
+
+.mego {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    color: black;
+}
+
+.pagesList {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    font-size: 60px;
+    gap: 100px;
+}
+
+.pagesList a {
+    text-decoration: none;
+    color: grey;
+    transition: 0.5s;
+}
+
+.pagesList li a:hover {
+    color: black;
+}
+
+
+@media screen and (max-width:950px) {
+    .yourfriend {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .yourfriend h1,
+    .yourfriend p {
+        font-size: 40px;
+
+    }
+
+    .yourfriend p {
+        margin: 0 auto;
+    }
+
+    .delivery .left {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .delivery .left h1 {
+        height: 100px;
+    }
+
+    .delivery .left p {
+        height: 70px;
+    }
+
+    .delivery .right  {
+        display:none;
+    }
+
+    .pagesList {
+        font-size: 40px;
+    }
+
+    .yourfriend h1{
+        font-size:40px;
+    }
+
+    .yourfriend p{
+        font-size:25px;
+    }
+
+    .love h1 {
+        font-size: 30px;
+    }
+
+   
+
+    .love p {
+        font-size: 15px;
+    }
+
+    .right1 img {
+        display: none;
+    }
+
+    .hi {
+        justify-content: center;
+        position: relative;
+        left: 25%;
+
+    }
+
+    .left1 {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .contactPage {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .weare h1{
+        font-size:50px;
+    }
+
+    .weare h2{
+        font-size:20px;
+    }
+
+    .weare h3{
+
+        font-size:15px;
+    }
+
+    .weare p{
+        font-size:10px;
+    }
+
+    .weare img{
+        width:300px;
+    }
+
+    .way{
+        font-size:30px;
+    }
+
+
+}
+
+@media screen and (max-width:750px) {
+    .delivery {
+
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        height: 100%;
+    }
+
+    .delivery .left {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .delivery .left h1 {
+        height: 100%;
+        font-size:30px;
+    }
+
+    .delivery .left p {
+        height: 100%;
+        font-size:15px;
+    }
+
+    .delivery button{
+        transform: scale(0.8);
+    }
+
+    .delivery .right {
+
+        display: none;
+
+    }
+
+  
+
+    .pagesList {
+        font-size: 40px;
+    }
+
+    .yourfriend h1{
+        font-size:20px;
+    }
+
+    .yourfriend p{
+        font-size:20px;
+    }
+
+    .foottexts h1 {
+        font-size: 30px;
+    }
+
+    .foottexts p {
+        font-size: 15px;
+    }
+
+    .foottexts p~label {
+        font-size: 15px;
+    }
+
+    .foottexts .email {
+        width: fit-content;
+    }
+
+    .footsub {
+        width: 150px;
+    }
+
+    .weare h1{
+        font-size:50px;
+    }
+
+    .weare h2{
+        font-size:20px;
+    }
+
+    .weare h3{
+
+        font-size:15px;
+    }
+
+    .weare p{
+        font-size:10px;
+    }
+
+    .weare img{
+        width:300px;
+    }
+
+    .way{
+        font-size:30px;
+    }
+
+    .love h1 {
+        font-size: 30px;
+    }
+
+   .love{
+    padding-inline: 30px;
+    text-align: center;
+   }
+
+    .love p {
+        font-size: 15px;
+    }
+
+    .right1 img {
+        display: none;
+    }
+
+    .hi {
+        justify-content: center;
+        position: relative;
+        left: 25%;
+
+    }
+
+    .left1 {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .contactPage {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .photos{
+        flex-direction: column;
+    }
+
+    .photos img {
+        width:80%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    nav .login {
+        display: none;
+
+    }
+
+    .yourfriend h1 {
+        font-size: 20px;
+    }
+
+    .yourfriend p {
+        font-size: 20px;
+    }
+
+    .yourfriend {
+        background-size: cover;
+    }
+
+    footer {
+        width: 100%;
+        margin-top: 50px;
+        height: 80%;
+    }
+
+
+
+    .pagesList {
+        font-size: 40px;
+    }
+
+    .weare {
+        font-size: 10px;
+    }
+
+    .weare h1 {
+        font-size: 40px;
+        ;
+    }
+
+    .weare p {
+        font-size: 10px;
+    }
+
+    .weare img {
+        width: 300px;
+    }
+
+    .zerowaste div {
+        display: none;
+    }
+
+    .foottexts h1 {
+        font-size: 20px;
+    }
+
+    .foottexts p {
+        font-size: 10px;
+    }
+
+    .foottexts p~label {
+        font-size: 10px;
+    }
+
+    .foottexts .email {
+        width: fit-content;
+    }
+
+    .footsub {
+        width: 100px;
+    }
+
+    .love h1 {
+        font-size: 30px;
+    }
+
+    .way {
+        font-size: 30px;
+    }
+
+    
+
+    .love p {
+        font-size: 15px;
+        
+    }
+
+    .right1 img {
+        display: none;
+    }
+
+    .hi {
+        justify-content: center;
+        position: relative;
+        left: 25%;
+
+    }
+
+    .left1 {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+
+    .contactPage {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+}
